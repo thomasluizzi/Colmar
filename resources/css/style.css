@@ -513,12 +513,10 @@ nav.mobile {
 
 #thesis h6 {
   padding-top: 24px;
-  padding-left:24px;
 }
 
 #thesis p {
   padding-top: 16px;
-  padding-left:24px;
   padding-bottom: 24px;
 }
 
@@ -563,11 +561,6 @@ footer {
   height: 3.5rem;
 }
 
-footer span {
-  padding-left: 24px;
-  padding-right: 24px;
-  color: #383838;
-}
 
 footer .container {
   display: flex;
@@ -576,17 +569,17 @@ footer .container {
   margin-top: .75rem;
 }
 
-nav {
-  text-align: right;
-  flex-grow: 1;
+footer span {
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #383838;
 }
 
-.footer-nav a {
+footer .footer-nav {
   display: inline-block;
   padding-right: 16px;
   color: #383838;
   font-size: .75rem;
-  cursor: auto;
   text-decoration: none;
 }
 
