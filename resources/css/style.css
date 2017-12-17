@@ -10,10 +10,10 @@ body {
   background-color: white;
 }
 
-/* .container {
+.container {
   max-width: 1050px;
   margin: auto;
-} */
+} 
 
 @media only screen and (max-width: 480px) {
   .container {
@@ -63,22 +63,20 @@ span {
 header {
   /* position: fixed;
   z-index: 100; */
-  width: 100%;
   background-color: white;
-  height: 64px;
 }
 
-header .flex-container {
+header .container {
   display: flex;
   align-items: center;
-  padding: 24px;
+  justify-content: space-between;
+  height: 64px;
 }
 
 .flex-logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  
+  justify-content: space-between;  
 }
 
 .logo img {
