@@ -70,13 +70,16 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+/*  Like being explicit with flex-direction despite row being the default :-) */
+  flex-direction: row; 
   height: 64px;
 }
 
 .flex-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .logo img {
@@ -132,39 +135,40 @@ nav.mobile {
 
   nav.mobile {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     padding-right: 24px;
     padding-left: 24px;
   }
 }
 
 /* "Start Here" Section */
-#main-banner {
+#start-here {
   background-color: #DCDCDC;
   margin: 0 auto;
 }
 
-#main-banner .container {
+#start-here .container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-#main-banner .container .left-box {
+#start-here .left-box {
   width: 60%;
   padding: 32px 24px;
 }
 
-#main-banner .left-box img {
+#start-here .left-box img {
   width: 100%;
 }
 
-#main-banner .container .right-box {
-  width: 40%;
+#start-here .right-box {
+  width: 440px;
 }
 
-.right-box .tagline {
+.tagline {
   height: auto;
   margin-top: 6rem;
   margin-right: 60px;
@@ -196,30 +200,32 @@ nav.mobile {
 }
 
 @media only screen and (max-width: 800px) {
-  #main-banner .container {
+  #start-here .container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
+    
   }
 
-  #main-banner .left-section {
+  #start-here .left-box {
     width: 100%;
-    padding: 0px 0px;
+    padding: 0;
   }
 
-  .right-section {
+  #start-here .right-box {
     width: 100%;
   }
 
   .tagline {
     margin: 32px 24px;
-    padding-left: 0px;
-    align-items: center;
+    padding-left: 0;
+    text-align: center;
   }
 
   .tagline a {
     width: 50%;
+    margin: auto;
   }
 }
 
