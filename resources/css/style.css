@@ -506,10 +506,9 @@ nav.mobile {
   width: 60%;
   }
 
-#thesis .left-box video{
-  width: 95%;
+#thesis .left-box video {
+  width: 100%;
   object-fit: contain;
-  padding: 0 32px 0 25px;
 }
 
 #thesis h6 {
