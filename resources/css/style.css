@@ -266,7 +266,7 @@ nav.mobile {
   flex-direction: row;
 }
 
-#schedule .container .left-box {
+#schedule .left-box {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -274,12 +274,21 @@ nav.mobile {
   padding: 32px 24px;
   }
 
-#schedule .container .left-box img {
+#schedule .left-box img {
   width: 100%;
 }
 
 #schedule .left-box p {
   padding: 24px 24px 24px 0px;
+}
+
+#schedule .right-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  flex-direction: column;
+  padding: 16px 0px 32px 0px;
+  border-left: 1px solid #DCDCDC;
 }
 
 #schedule .content {
@@ -309,14 +318,6 @@ nav.mobile {
   text-decoration: underline;
 }
 
-#schedule .container .right-box {
-  padding: 16px 0px 32px 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-
 .box {
   width: 100%;
   display: flex;
@@ -342,17 +343,17 @@ nav.mobile {
   border-bottom: 1px solid #DCDCDC;
 }
 
-.lecture {
+.third-info {
   background-color: #DCDCDC;
 }
 
 @media only screen and (max-width: 480px) {
    
-  #schedule .container .left-box  {
+  #schedule .left-box  {
     display: none;
   }
 
-  #schedule .container .right-box  {
+  #schedule .right-box  {
     border-left: 0px;
     padding: 16px 16px 32px 16px;
     display: flex;
@@ -361,21 +362,21 @@ nav.mobile {
     flex-direction: column;
   }
 
-  .lecture {
-    background-color: white;
-  }
-
   .second-info {
     border-top: 0px;
     border-bottom: 0px;
     margin: 16px 0px;
   }
 
+  .third-info {
+    background-color: white;
+  }
+  
   .box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
   }
 
