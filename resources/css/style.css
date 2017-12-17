@@ -156,7 +156,6 @@ nav.mobile {
 #main-banner .container .left-box {
   width: 60%;
   padding: 32px 24px;
-  border: 1px solid black;
 }
 
 #main-banner .left-box img {
@@ -165,7 +164,6 @@ nav.mobile {
 
 #main-banner .container .right-box {
   width: 40%;
-  border: 1px solid black;
 }
 
 .right-box .tagline {
@@ -175,8 +173,7 @@ nav.mobile {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border: 1px solid black;
-}
+  }
 
 .tagline h4 {
   margin-top: 32px;
