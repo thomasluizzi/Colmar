@@ -61,9 +61,10 @@ span {
 
 /* Header */
 header {
-  /* position: fixed;
-  z-index: 100; */
+  position: fixed;
+/*  z-index: 100; */
   background-color: white;
+  width: 100%;
 }
 
 header .container {
