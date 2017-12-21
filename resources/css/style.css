@@ -596,16 +596,18 @@ footer .footer-nav {
     border-top: 0px;
   }
 
+  footer span {
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #383838;
+  }
   footer .container {
     margin-top: 24px;
   }
 
-  footer .footer-nav{
+  footer .footer-nav {
     display: none;
   }
 
-  footer p {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+
 }
