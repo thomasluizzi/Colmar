@@ -74,6 +74,7 @@ header .container {
 /*  Like being explicit with flex-direction despite row being the default :-) */
   flex-direction: row; 
   height: 64px;
+  padding: 0 24px;
 }
 
 .flex-logo {
@@ -106,7 +107,7 @@ nav {
 
 .desktop a {
   display: inline-block;
-  padding-right: 16px;
+  padding-left: 16px;
   color: #383838;
   font-size: 1rem;
   cursor: auto;
@@ -125,7 +126,10 @@ nav.mobile {
   display: none;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 690px) { 
+  header .container {
+    padding: 0;
+  }
   nav.desktop {
     display: none;
   }
@@ -135,12 +139,12 @@ nav.mobile {
   }
 
   nav.mobile {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
+    flex-direction: row;   
+    padding: 0 24px;
   }
 }
 
@@ -148,6 +152,7 @@ nav.mobile {
 #start-here {
   background-color: #DCDCDC;
   margin: 0 auto;
+  padding-top: 64px;
 }
 
 #start-here .container {
@@ -505,6 +510,7 @@ nav.mobile {
   justify-content: space-between;
   flex-direction: column;
   width: 60%;
+  margin: 0 24px 0 24px;
   }
 
 #thesis .left-box video {
@@ -568,16 +574,15 @@ footer .container {
   justify-content: space-between;
   align-items: center;
   margin-top: .75rem;
+  padding: 0 24px;
 }
 
 footer span {
-  padding-right: 24px;
-  color: #383838;
+    color: #383838;
 }
 
 footer .footer-nav {
   display: inline-block;
-  padding-right: 16px;
   color: #383838;
   font-size: .75rem;
   text-decoration: none;
